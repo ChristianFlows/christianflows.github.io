@@ -5,10 +5,10 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #ededf6;
 }
 
@@ -21,10 +21,16 @@ a:visited {
     text-decoration: none;
 }
 
+.margin-b {
+    margin-bottom: 10px;
+}
+
+/* Header Styles */
+
 header {
     background: #31343d;
     width: 100%;
-    padding: 20px 10px 20px 0;
+    padding: 20px 30px 20px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,8 +38,13 @@ header {
 
 header h1 {
     background: #92cccd;
-    font-size: 42px;
-    padding: 10px;
+    color: #495c7a;
+    font-size: 32px;
+    padding: 10px 10px 10px 50px;
+}
+
+header nav {
+    margin: 15px 0;
 }
 
 header nav ul {
@@ -46,13 +57,102 @@ header nav ul {
 
 header nav ul li a {
     color: #bbc6c9;
-    padding: 10px 10px;
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 2px solid white;
+}
+
+/* END Header Styles */
+
+.hero {
+    background-color: #495c7a;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23271f33' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cta {
+    background: #92cccd;
+    color: #495c7a;
+    padding: 5px;
+    position: relative;
+    right: 30px;
+    bottom: 20px;
+}
+
+section {
+    padding: 25px;
 }
 
 .section-title {
+    font-size: 30px;
     color: #495c7a;
+    border-right: 2px solid #495c7a;
+    margin-right: 30px;
 }
+
+/* Flexbox Settings */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+    flex-basis: 20%;
+    flex: 1;
+}
+
+.second-column {
+    flex-direction: column;
+    flex-basis: 80%;
+}
+/* END Flexbox Settings */
+
+/* Portfolio */
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-work {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 98%;
+    height: 300px;
+    margin-bottom: 1%;
+    padding: 10px;
+}
+
+.portfolio-work {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 48%;
+    height: 150px;
+    margin: 1%;
+}
+
+.port-border {
+    border: 3px solid blue;
+}
+
+/* END Portfolio */
+
+/* Footer Styles */
 
 footer {
     background: #31343d;
+    height: 10vh;
 }
+
+/* END Footer Styles */
+
+/* Media Queries */
