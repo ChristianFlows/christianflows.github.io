@@ -15,12 +15,8 @@ body {
     background: #ededf6;
 }
 
+a:visited,
 a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -95,7 +91,7 @@ header nav ul li a:hover, {
 }
 
 section {
-    padding: 150px 25px 150px 25px;
+    padding: 150px 25px;
 }
 
 .section-title {
@@ -203,17 +199,57 @@ footer {
     width: 100%;
     padding-top: 30px;
     text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+footer a,
+footer a:visited {
+    color: #fff;
 }
 
 /* END Footer Styles */
 
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1120px) {
+
+    header {
+        justify-content: center;
+        padding: 0;
+        padding-bottom: 15px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header h1 {
+        text-align: center;
+        padding: 10px 5px;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        padding: 0 100px;
+    }
+
+    .hero {
+        height: 25vh;
+    }
+
     .section-title {
-        margin-right: 55px;
+        margin-right: 125px;
         margin-bottom: 30px;
         border-bottom: 2px solid var(--primary-color);
         border-right: none;
     }
+
+    .featured-work,
+    .portfolio-work {
+        height: 300px;
+        flex-basis: 100%;
+    }
+    
+    .work-container {
+        margin-top: 50px;
+    }
+
 }
