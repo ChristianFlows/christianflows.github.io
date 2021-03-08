@@ -252,3 +252,18 @@ footer a:visited {
     }
 
 }
+
+@media only screen and (max-width: 618px) {
+    header nav ul {
+        justify-content: normal;
+    }
+
+    header nav ul li {
+        margin-top: 35px;
+    }
+
+    .cta {
+        padding: 15px;
+        right: 0;
+    }
+}
