@@ -209,7 +209,7 @@ footer a:visited {
 /* END Footer Styles */
 
 /* Media Queries */
-
+/* 1120 Breakpoint */
 @media only screen and (max-width: 1120px) {
 
     header {
@@ -253,6 +253,7 @@ footer a:visited {
 
 }
 
+/* 618px Breakpoint */
 @media only screen and (max-width: 618px) {
     header nav ul {
         justify-content: normal;
